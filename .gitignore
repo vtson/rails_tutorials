@@ -26,3 +26,15 @@ config/database.yml
 
 # Ignore secrets files
 config/secrets.yml
+
+# Ignore .drone
+/.drone.yml
+
+# Ignore Dockerfile
+Dockerfile
+
+# Ignore framgia-ci-reports/
+.framgia-ci-reports/*
+
+# Igrone .framgia-ci-result.temp.yml
+.framgia-ci-result.temp.yml
