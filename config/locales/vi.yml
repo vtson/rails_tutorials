@@ -1,0 +1,39 @@
+vi:
+  layouttitle: " | Rails Hướng dẫn"
+  lang:
+    en: Tiếng anh
+    vn: Tiếng việt
+  home:
+    title: Trang chủ
+    h1: Ứng dụng mẫu
+    p1: Đây là trang chủ của
+    p2: Hướng dẫn về Ruby on Rails
+    p3: ứng dụng mẫu.
+    link: Sách về Ruby on Rails
+  about:
+    title: Thông tin
+    p1: Đây 
+    p2:  là một 
+    p3: và
+    p4: để dạy phát triển web với
+    p5: TĐây là ứng dụng mẫu cho hướng dẫn.
+    link:
+      link1:  Hướng dẫn về Ruby on Rails 
+      link2: sách
+      link3: loạt screencast
+      link4: Ruby on Rails
+  contact:
+    title: Liên hệ
+    p: Liên hệ với Hướng dẫn của Ruby on Rails về ứng dụng mẫu tại
+    link: Trang liên lạc
+  help:
+    title: Trợ giúp
+    p1: Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
+    p2: Để được trợ giúp về ứng dụng mẫu này, hãy xem phần
+    link1: Phần trợ giúp hướng dẫn của Rails
+    link2: Sách hướng dẫn về Ruby on Rails
+  menubar:
+    home: Trang chủ
+    about: Thông tin
+    contact: Liên hệ
+    help: Trợ giúp
