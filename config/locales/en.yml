@@ -30,7 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  layouttitle: " | Rails Tutorials"
+  layouttitle: "Rails Tutorials"
   lang:
     en: English
     vn: Vietnamese

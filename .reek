@@ -2,6 +2,9 @@ IrresponsibleModule:
   enabled: false
 
 exclude_paths:
-  - 'vendor'
-  - 'db/migrate'
+  - "vendor"
+  - "db/migrate"
 
+"app/helpers":
+  FeatureEnvy:
+    enabled: false
