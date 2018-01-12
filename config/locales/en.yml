@@ -41,6 +41,7 @@ en:
     p2: Ruby on Rails Tutorial
     p3: sample application.
     link: Ruby on Rails Books
+    signup: Sign up now!
   about:
     title: About
     p1: The 
@@ -63,8 +64,24 @@ en:
     p2: To get help on this sample app, see the
     link1: Rails Tutorial help section
     link2: Ruby on Rails Tutorial book
-  menubar:
-    home: Home
-    about: About
-    contact: Contact
-    help: Help
+  user:
+    title: Sign up
+    h1: Sign up
+    p: This will be a signup page for new users.
+  layouts:
+    header: Sample app
+    menubar:
+      home: Home
+      about: About
+      contact: Contact
+      help: Help
+      login: Log in
+    footer:
+      about: About
+      contact: Contact
+      news: News
+      author:
+        p1: The
+        p2: by
+        a1: Ruby on Rails Tutorial
+        a2: Michael Hartl

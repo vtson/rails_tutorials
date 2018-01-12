@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t("layouts.header"), "#", class: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("layouts.menubar.home"), home_path %></li>
+        <li><%= link_to t("layouts.menubar.about"), about_path %></li>
+        <li><%= link_to t("layouts.menubar.contact"), contact_path %></li>
+        <li><%= link_to t("layouts.menubar.help"), help_path %></li>
+        <li><%= link_to t("layouts.menubar.login"), "#" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
