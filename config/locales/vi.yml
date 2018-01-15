@@ -10,6 +10,7 @@ vi:
     p2: Hướng dẫn về Ruby on Rails
     p3: ứng dụng mẫu.
     link: Sách về Ruby on Rails
+    signup: Đăng kí ngay!
   about:
     title: Thông tin
     p1: Đây 
@@ -32,8 +33,24 @@ vi:
     p2: Để được trợ giúp về ứng dụng mẫu này, hãy xem phần
     link1: Phần trợ giúp hướng dẫn của Rails
     link2: Sách hướng dẫn về Ruby on Rails
-  menubar:
-    home: Trang chủ
-    about: Thông tin
-    contact: Liên hệ
-    help: Trợ giúp
+  user:
+    title: Đăng kí
+    h1: Đăng kí
+    p: This will be a signup page for new users.
+  layouts:
+    header: Ưng dụng mẫu
+    menubar:
+      home: Trang chủ
+      about: Thông tin
+      contact: Liên hệ
+      help: Trợ giúp
+      login: Đăng nhập
+    footer:
+      about: Thông tin
+      contact: Liên hệ
+      news: Mới
+      author:
+        p1: The
+        p2: by
+        a1: Ruby on Rails Tutorial
+        a2: Michael Hartl
