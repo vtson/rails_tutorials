@@ -1,0 +1,13 @@
+model_user:
+  firstname:
+    minimum: 2
+  lastname:
+    minimum: 2
+  displayname:
+    maximum: 50
+  age:
+    minimum: 1
+  email:
+    maximum: 255
+  password:
+    minimum: 6
