@@ -37,6 +37,7 @@ vi:
     title: Đăng kí
     h1: Đăng kí
     p: This will be a signup page for new users.
+    submit: Tạo tài khoản của tôi
   layouts:
     header: Ưng dụng mẫu
     menubar:
@@ -54,3 +55,30 @@ vi:
         p2: by
         a1: Ruby on Rails Tutorial
         a2: Michael Hartl
+  errormess:
+    tterr1: Biểu mẫu bao gồm
+    tterr2: lỗi
+  errors:
+    messages:
+      blank: Không được để trống
+      too_short: Quá ngắn
+      not_a_number: Không phải một số
+      invalid: Không hợp lệ
+  signup:
+    firstname: Họ
+    lastname: Tên
+    displayname: Tên hiển thị
+    age: Tuổi
+    sex:
+      gender: Giới tính
+      unknown: Không xác định
+      male: Nam
+      female: Nữ
+      n_a: N A
+    email: Email
+    password: Mật khẩu
+    confirmation: Xác nhận mật khẩu
+  usercontroller:
+    ttnewuser: Chào mừng đến với ứng dụng mẫu!
+  find_user:
+    notfind: Không tìm thấy ngưòi dùng này

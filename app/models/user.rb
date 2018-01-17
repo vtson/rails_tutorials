@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  enum sex: [:unknown, :male, :female, :n_a]
 
   validates :firstname, presence: true,
     length: {minimum: Settings.model_user.firstname.minimum}

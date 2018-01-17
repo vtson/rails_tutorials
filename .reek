@@ -7,3 +7,7 @@ exclude_paths:
 
 UtilityFunction:
   public_methods_only: true
+
+FeatureEnvy:
+  exclude:
+    - "UsersHelper#gravatar_for"
