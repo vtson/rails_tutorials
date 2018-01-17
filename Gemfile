@@ -7,6 +7,8 @@ end
 
 
 gem "rails", "~> 5.1.4"
+gem "bcrypt", "3.1.11"
+gem "config"
 gem "bootstrap-sass", "3.3.7"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
@@ -36,7 +38,7 @@ group :development, :test do
   gem "reek"
   gem "railroady"
   gem "autoprefixer-rails"
-  gem 'sqlite3'
+  gem "sqlite3"
 
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 
