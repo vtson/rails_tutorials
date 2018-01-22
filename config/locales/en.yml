@@ -68,6 +68,7 @@ en:
     title: Sign up
     h1: Sign up
     p: This will be a signup page for new users.
+    submit: Create my account
   layouts:
     header: Sample app
     menubar:
@@ -85,3 +86,24 @@ en:
         p2: by
         a1: Ruby on Rails Tutorial
         a2: Michael Hartl
+  errormess:
+    tterr1: The form contains
+    tterr2: error
+  signup:
+    firstname: Firstname
+    lastname: Lastname
+    displayname: Displayname
+    age: Age
+    sex:
+      gender: Gender
+      unknown: Unknown
+      male: Male
+      female: Female
+      n_a: N A
+    email: Email
+    password: Password
+    confirmation: Confirmation
+  usercontroller:
+    ttnewuser: Welcome to Sample App!
+  find_user:
+    notfind: User not found

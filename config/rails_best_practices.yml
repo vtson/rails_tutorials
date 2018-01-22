@@ -27,7 +27,7 @@ ProtectMassAssignmentCheck: {
   ignored_files: []
 }
 RemoveEmptyHelpersCheck: { 
-  ignored_files: ['static_pages_helper.rb']
+  ignored_files: []
 }
 RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
@@ -37,7 +37,9 @@ RemoveUnusedMethodsInControllersCheck: {
     StaticPagesController#about,
     StaticPagesController#help,
     StaticPagesController#contact,
-    UsersController#new
+    UsersController#new,
+    UsersController#create,
+    UsersController#show,
   ],
 }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
