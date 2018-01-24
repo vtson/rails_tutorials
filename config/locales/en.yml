@@ -77,6 +77,11 @@ en:
       contact: Contact
       help: Help
       login: Log in
+      account:
+        name: Account
+        logout: Log out
+        profile: Profile
+        setting: Settings
     footer:
       about: About
       contact: Contact
@@ -89,21 +94,27 @@ en:
   errormess:
     tterr1: The form contains
     tterr2: error
-  signup:
-    firstname: Firstname
-    lastname: Lastname
-    displayname: Displayname
-    age: Age
-    sex:
+  activerecord:
+    attributes:
+      user:
+        firstname: Firstname
+        lastname: Lastname
+        displayname: Displayname
+        age: Age
+        email: Email
+        password: Password
+        confirmation: Confirmation
+  sex:
       gender: Gender
       unknown: Unknown
       male: Male
       female: Female
       n_a: N A
-    email: Email
-    password: Password
-    confirmation: Confirmation
   usercontroller:
     ttnewuser: Welcome to Sample App!
   find_user:
     notfind: User not found
+  login:
+    title: Log in
+    newuser: New user?
+    invalid: "Invalid email/password combination"

@@ -1,13 +1,31 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to t("layouts.header"), "#", class: "logo" %>
+    <%= link_to t("layouts.header"), root_path, class: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("layouts.menubar.home"), home_path %></li>
         <li><%= link_to t("layouts.menubar.about"), about_path %></li>
         <li><%= link_to t("layouts.menubar.contact"), contact_path %></li>
         <li><%= link_to t("layouts.menubar.help"), help_path %></li>
-        <li><%= link_to t("layouts.menubar.login"), "#" %></li>
+        <% if logged_in? %>
+          <li><%= link_to "Users", "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+              <%= t "layouts.menubar.account.name" %>
+              <%= content_tag :b, "", class: "caret" %>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("layouts.menubar.account.profile"), current_user %></li>
+              <li><%= link_to t("layouts.menubar.account.setting"), "#" %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t("layouts.menubar.account.logout"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          <li>
+        <% else %>
+          <li><%= link_to t("layouts.menubar.login"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

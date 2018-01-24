@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
   attr_reader :user
 
+  before_action :gender, only: %i(new create)
+
   def new
     @user = User.new
-    gender
   end
 
   def create
@@ -12,7 +13,7 @@ class UsersController < ApplicationController
       flash[:success] = t "usercontroller.ttnewuser"
       redirect_to user
     else
-      render :new, gender: gender
+      render :new
     end
   end
 
@@ -31,10 +32,6 @@ class UsersController < ApplicationController
   end
 
   def gender
-    @gender ||= gender_options
-  end
-
-  def gender_options
-    User.sexes.map{|key, value| [I18n.t("signup.sex.#{key}"), value]}
+    @gender = User.sexes.map{|key, value| [I18n.t("sex.#{key}"), value]}
   end
 end

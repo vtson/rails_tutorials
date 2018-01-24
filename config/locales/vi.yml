@@ -46,6 +46,11 @@ vi:
       contact: Liên hệ
       help: Trợ giúp
       login: Đăng nhập
+      account:
+        name: Tài khoản
+        logout: Đăng xuất
+        profile: Hồ sơ
+        setting: Cài đặt
     footer:
       about: Thông tin
       contact: Liên hệ
@@ -64,21 +69,27 @@ vi:
       too_short: Quá ngắn
       not_a_number: Không phải một số
       invalid: Không hợp lệ
-  signup:
-    firstname: Họ
-    lastname: Tên
-    displayname: Tên hiển thị
-    age: Tuổi
-    sex:
-      gender: Giới tính
-      unknown: Không xác định
-      male: Nam
-      female: Nữ
-      n_a: N A
-    email: Email
-    password: Mật khẩu
-    confirmation: Xác nhận mật khẩu
+  activerecord:
+    attributes:
+      user:
+        firstname: Họ
+        lastname: Tên
+        displayname: Tên hiển thị
+        age: Tuổi
+        email: Email
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+        gender: Giới tính
+  sex:
+    unknown: Không xác định
+    male: Nam
+    female: Nữ
+    n_a: N A
   usercontroller:
     ttnewuser: Chào mừng đến với ứng dụng mẫu!
   find_user:
     notfind: Không tìm thấy ngưòi dùng này
+  login:
+    title: Đăng nhập
+    newuser: Chưa có tài khoản?
+    invalid: Email hoặc mật khẩu không đúng
