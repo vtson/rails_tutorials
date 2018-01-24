@@ -1,17 +1,17 @@
 <footer class="footer">
   <small>
-    <%= t("layouts.footer.author.p1") %>
-    <%= link_to t("layouts.footer.author.a1"),
+    <%= t ".author.p1" %>
+    <%= link_to t(".author.a1"),
       "http://www.railstutorial.org/" %>
-    <%= t("layouts.footer.author.p2" ) %>
-    <%= link_to t("layouts.footer.author.a2"),
+    <%= t ".author.p2" %>
+    <%= link_to t(".author.a2"),
       "http://www.michaelhartl.com/"%>
   </small>
   <nav>
     <ul>
-      <li><%= link_to t("layouts.footer.about"), about_path %></li>
-      <li><%= link_to t("layouts.footer.contact"), contact_path %></li>
-      <li><%= link_to t("layouts.footer.news"), "#" %></li>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), "#" %></li>
       <li><%= link_to t("lang.en"), {locale: :en} %></li>
       <li><%= link_to t("lang.vn"), {locale: :vi} %></li>
     </ul>

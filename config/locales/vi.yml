@@ -3,54 +3,57 @@ vi:
   lang:
     en: Tiếng anh
     vn: Tiếng việt
-  home:
-    title: Trang chủ
-    h1: Ứng dụng mẫu
-    p1: Đây là trang chủ của
-    p2: Hướng dẫn về Ruby on Rails
-    p3: ứng dụng mẫu.
-    link: Sách về Ruby on Rails
-    signup: Đăng kí ngay!
-  about:
-    title: Thông tin
-    p1: Đây 
-    p2:  là một 
-    p3: và
-    p4: để dạy phát triển web với
-    p5: TĐây là ứng dụng mẫu cho hướng dẫn.
-    link:
-      link1:  Hướng dẫn về Ruby on Rails 
-      link2: sách
-      link3: loạt screencast
-      link4: Ruby on Rails
-  contact:
-    title: Liên hệ
-    p: Liên hệ với Hướng dẫn của Ruby on Rails về ứng dụng mẫu tại
-    link: Trang liên lạc
-  help:
-    title: Trợ giúp
-    p1: Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
-    p2: Để được trợ giúp về ứng dụng mẫu này, hãy xem phần
-    link1: Phần trợ giúp hướng dẫn của Rails
-    link2: Sách hướng dẫn về Ruby on Rails
-  user:
-    title: Đăng kí
-    h1: Đăng kí
-    p: This will be a signup page for new users.
-    submit: Tạo tài khoản của tôi
+  static_pages:
+    home:
+      title: Trang chủ
+      h1: Ứng dụng mẫu
+      p1: Đây là trang chủ của
+      p2: Hướng dẫn về Ruby on Rails
+      p3: ứng dụng mẫu.
+      link: Sách về Ruby on Rails
+      signup: Đăng kí ngay!
+    about:
+      title: Thông tin
+      p1: Đây 
+      p2:  là một 
+      p3: và
+      p4: để dạy phát triển web với
+      p5: TĐây là ứng dụng mẫu cho hướng dẫn.
+      link:
+        link1:  Hướng dẫn về Ruby on Rails 
+        link2: sách
+        link3: loạt screencast
+        link4: Ruby on Rails
+    contact:
+      title: Liên hệ
+      p: Liên hệ với Hướng dẫn của Ruby on Rails về ứng dụng mẫu tại
+      link: Trang liên lạc
+    help:
+      title: Trợ giúp
+      p1: Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
+      p2: Để được trợ giúp về ứng dụng mẫu này, hãy xem phần
+      link1: Phần trợ giúp hướng dẫn của Rails
+      link2: Sách hướng dẫn về Ruby on Rails
+  users:
+    new:
+      title: Đăng kí
+      h1: Đăng kí
+      p: This will be a signup page for new users.
+      submit: Tạo tài khoản của tôi
   layouts:
-    header: Ưng dụng mẫu
-    menubar:
-      home: Trang chủ
-      about: Thông tin
-      contact: Liên hệ
-      help: Trợ giúp
-      login: Đăng nhập
-      account:
-        name: Tài khoản
-        logout: Đăng xuất
-        profile: Hồ sơ
-        setting: Cài đặt
+    header:
+      menubar:
+        title: Ưng dụng mẫu
+        home: Trang chủ
+        about: Thông tin
+        contact: Liên hệ
+        help: Trợ giúp
+        login: Đăng nhập
+        account:
+          name: Tài khoản
+          logout: Đăng xuất
+          profile: Hồ sơ
+          setting: Cài đặt
     footer:
       about: Thông tin
       contact: Liên hệ
@@ -89,7 +92,9 @@ vi:
     ttnewuser: Chào mừng đến với ứng dụng mẫu!
   find_user:
     notfind: Không tìm thấy ngưòi dùng này
-  login:
-    title: Đăng nhập
-    newuser: Chưa có tài khoản?
-    invalid: Email hoặc mật khẩu không đúng
+  sessions:
+    new:
+      title: Đăng nhập
+      newuser: Chưa có tài khoản?
+      invalid: Email hoặc mật khẩu không đúng
+      remember_me: Nhớ tài khoản?
