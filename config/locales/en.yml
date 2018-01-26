@@ -34,54 +34,57 @@ en:
   lang:
     en: English
     vn: Vietnamese
-  home:
-    title: Home
-    h1: Sample App
-    p1: This is the home page for the
-    p2: Ruby on Rails Tutorial
-    p3: sample application.
-    link: Ruby on Rails Books
-    signup: Sign up now!
-  about:
-    title: About
-    p1: The 
-    p2:  is a 
-    p3: and
-    p4: to teach web development with
-    p5: This is the sample application for the tutorial.
-    link:
-      link1:  Ruby on Rails Tutorial 
-      link2: book
-      link3: screencast series
-      link4: Ruby on Rails
-  contact:
-    title: Contact
-    p: Contact the Ruby on Rails Tutorial about the sample app at the
-    link: contact page
-  help:
-    title: Help
-    p1: Get help on the Ruby on Rails Tutorial at the
-    p2: To get help on this sample app, see the
-    link1: Rails Tutorial help section
-    link2: Ruby on Rails Tutorial book
-  user:
-    title: Sign up
-    h1: Sign up
-    p: This will be a signup page for new users.
-    submit: Create my account
+  static_pages:
+    home:
+      title: Home
+      h1: Sample App
+      p1: This is the home page for the
+      p2: Ruby on Rails Tutorial
+      p3: sample application.
+      link: Ruby on Rails Books
+      signup: Sign up now!
+    about:
+      title: About
+      p1: The 
+      p2:  is a 
+      p3: and
+      p4: to teach web development with
+      p5: This is the sample application for the tutorial.
+      link:
+        link1:  Ruby on Rails Tutorial 
+        link2: book
+        link3: screencast series
+        link4: Ruby on Rails
+    contact:
+      title: Contact
+      p: Contact the Ruby on Rails Tutorial about the sample app at the
+      link: contact page
+    help:
+      title: Help
+      p1: Get help on the Ruby on Rails Tutorial at the
+      p2: To get help on this sample app, see the
+      link1: Rails Tutorial help section
+      link2: Ruby on Rails Tutorial book
+  users:
+    new:
+      title: Sign up
+      h1: Sign up
+      p: This will be a signup page for new users.
+      submit: Create my account
   layouts:
-    header: Sample app
-    menubar:
-      home: Home
-      about: About
-      contact: Contact
-      help: Help
-      login: Log in
-      account:
-        name: Account
-        logout: Log out
-        profile: Profile
-        setting: Settings
+    header:
+      menubar:
+        title: Sample app
+        home: Home
+        about: About
+        contact: Contact
+        help: Help
+        login: Log in
+        account:
+          name: Account
+          logout: Log out
+          profile: Profile
+          setting: Settings
     footer:
       about: About
       contact: Contact
@@ -114,7 +117,9 @@ en:
     ttnewuser: Welcome to Sample App!
   find_user:
     notfind: User not found
-  login:
-    title: Log in
-    newuser: New user?
-    invalid: "Invalid email/password combination"
+  sessions:
+    new:
+      title: Log in
+      newuser: New user?
+      invalid: "Invalid email/password combination"
+      remember_me: Remember me?

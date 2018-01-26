@@ -1,5 +1,5 @@
-<% provide :title, t("user.title") %>
-<h1><%= t "user.h1" %></h1>
+<% provide :title, t(".title") %>
+<h1><%= t ".h1" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
@@ -30,7 +30,7 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
-      <%= f.submit t("user.submit"), class: "btn btn-primary" %>
+      <%= f.submit t(".submit"), class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
