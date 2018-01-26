@@ -70,7 +70,25 @@ en:
       title: Sign up
       h1: Sign up
       p: This will be a signup page for new users.
-      submit: Create my account
+    form:
+      signup:
+        submit: Create my account
+      edit:
+        submit: Save changes
+    edit:
+      title: Edit user
+      h1: Update your profile
+      require_login: Please log in
+      change_avatar: Change avatar
+    update:
+      update_success: Profile updated
+    index:
+      all_users: All users
+    user:
+      confirm: Are you sure?
+      delete: Delete
+    create:
+      ttnewuser: Welcome to Sample App!
   layouts:
     header:
       menubar:
@@ -85,6 +103,7 @@ en:
           logout: Log out
           profile: Profile
           setting: Settings
+      users: Users
     footer:
       about: About
       contact: Contact
@@ -113,13 +132,16 @@ en:
       male: Male
       female: Female
       n_a: N A
-  usercontroller:
-    ttnewuser: Welcome to Sample App!
-  find_user:
-    notfind: User not found
+  users_controller:
+    find_user_fail: Users not found
   sessions:
     new:
       title: Log in
       newuser: New user?
       invalid: "Invalid email/password combination"
       remember_me: Remember me?
+  destroy_success: Destroy success
+  destroy_fail: Cannot destroy
+  will_paginate:
+    previous_label: Previous Label
+    next_label: Next Label
