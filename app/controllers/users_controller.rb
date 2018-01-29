@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :find_user, only: [:edit, :show, :update, :destroy]
   before_action :load_genders, only: %i(new create edit update)
@@ -7,7 +6,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.activated.paginate page: params[:page],
       per_page: Settings.page_limit.number
   end
 
@@ -18,15 +17,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if user.save
-      log_in user
-      flash[:success] = t ".ttnewuser"
-      redirect_to user
+      create_success
     else
       render :new
     end
   end
-
-  def show; end
 
   def edit; end
 
@@ -47,6 +42,10 @@ class UsersController < ApplicationController
       flash[:danger] = t ".cannot_destroy"
       redirect_to users_path
     end
+  end
+
+  def show
+    redirect_to root_url && return unless user.activated?
   end
 
   private
@@ -82,6 +81,12 @@ class UsersController < ApplicationController
   def find_user
     return if (@user = User.find_by id: params[:id])
     flash[:danger] = t ".find_user_fail"
+    redirect_to root_path
+  end
+
+  def create_success
+    user.send_activation_email
+    flash[:info] = t ".check_email"
     redirect_to root_path
   end
 end

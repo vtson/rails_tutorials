@@ -44,6 +44,8 @@ vi:
         submit: Tạo tài khoản của tôi
       edit:
         submit: Lưu thay đổi
+    create:
+      check_email: Vui lòng kiểm tra email của bạn để kích hoạt tài khoản.
     edit:
       title: Chỉnh sửa ngưòi dùng
       h1: Cập nhật thông tin của bạn
@@ -56,8 +58,6 @@ vi:
     user:
       confirm: Bạn có chắc chắn muốn xóa tài khoản này?
       delete: Xóa
-    create:
-      ttnewuser: Chào mừng đến với ứng dụng mẫu!
   layouts:
     header:
       menubar:
@@ -115,6 +115,19 @@ vi:
       newuser: Chưa có tài khoản?
       invalid: Email hoặc mật khẩu không đúng
       remember_me: Nhớ tài khoản?
+    create:
+      acc_active: Tài khoản chưa đưọc kích hoạt.Xem email để nhận link kích hoạt.
+  account_activations:
+    edit:
+      active_account: Kích hoạt thành công!
+      invalid_link: Link kích hoạt không đúng
+  user_mailer:
+    account_activation:
+      p1: Chào %{displayname}
+      p2: Bấm vào link bên dưói để kích hoạt tài khoản
+      link: Kích hoạt
+      subject: Kích hoạt tài khoản
+      title: Ưng dụng mẫu
   destroy_success: Xóa ngưòi dùng thành công
   destroy_fail: Không xóa được
   will_paginate:
