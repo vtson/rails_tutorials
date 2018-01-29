@@ -1,0 +1,32 @@
+<%= form_for user, url: path do |f| %>
+  <%= render "shared/error_messages", user: user %>
+  <%= f.label :firstname %>
+  <%= f.text_field :firstname, class: "form-control" %>
+
+  <%= f.label :lastname %>
+  <%= f.text_field :lastname, class: "form-control" %>
+
+  <%= f.label :displayname %>
+  <%= f.text_field :displayname, class: "form-control" %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :gender %>
+  <%= f.select :gender, genders, class: "form-control" %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+
+  <% if user.new_record? %>
+    <%= f.submit t(".signup.submit"), class: "btn btn-primary" %>
+  <% else %>
+    <%= f.submit t(".edit.submit"), class: "btn btn-primary" %>
+  <% end %>
+<% end %>

@@ -2,35 +2,6 @@
 <h1><%= t ".h1" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-
-    <%= form_for @user, url: signup_path do |f| %>
-
-      <%= render "shared/error_messages", user: f.object %>
-      <%= f.label :firstname %>
-      <%= f.text_field :firstname, class: "form-control" %>
-
-      <%= f.label :lastname %>
-      <%= f.text_field :lastname, class: "form-control" %>
-
-      <%= f.label :displayname %>
-      <%= f.text_field :displayname, class: "form-control" %>
-
-      <%= f.label :age %>
-      <%= f.number_field :age %>
-
-      <%= f.label :gender %>
-      <%= f.select :gender, @gender, class: "form-control" %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class: "form-control" %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: "form-control" %>
-
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, class: "form-control" %>
-
-      <%= f.submit t(".submit"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form", path: signup_path, user: @user, genders: @genders %>
   </div>
 </div>

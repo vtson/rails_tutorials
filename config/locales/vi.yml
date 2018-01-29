@@ -39,7 +39,25 @@ vi:
       title: Đăng kí
       h1: Đăng kí
       p: This will be a signup page for new users.
-      submit: Tạo tài khoản của tôi
+    form:
+      signup:
+        submit: Tạo tài khoản của tôi
+      edit:
+        submit: Lưu thay đổi
+    edit:
+      title: Chỉnh sửa ngưòi dùng
+      h1: Cập nhật thông tin của bạn
+      require_login: Vui lòng đăng nhập
+      change_avatar: Thay ảnh
+    update:
+      update_success: Cập nhật thông tin thành công
+    index:
+      all_users: Toàn bộ ngưòi dùng
+    user:
+      confirm: Bạn có chắc chắn muốn xóa tài khoản này?
+      delete: Xóa
+    create:
+      ttnewuser: Chào mừng đến với ứng dụng mẫu!
   layouts:
     header:
       menubar:
@@ -54,6 +72,7 @@ vi:
           logout: Đăng xuất
           profile: Hồ sơ
           setting: Cài đặt
+      users: Ngưòi sử dụng
     footer:
       about: Thông tin
       contact: Liên hệ
@@ -88,13 +107,16 @@ vi:
     male: Nam
     female: Nữ
     n_a: N A
-  usercontroller:
-    ttnewuser: Chào mừng đến với ứng dụng mẫu!
-  find_user:
-    notfind: Không tìm thấy ngưòi dùng này
+  user_controller:
+    find_user_fail: Không tìm thấy ngưòi dùng nào
   sessions:
     new:
       title: Đăng nhập
       newuser: Chưa có tài khoản?
       invalid: Email hoặc mật khẩu không đúng
       remember_me: Nhớ tài khoản?
+  destroy_success: Xóa ngưòi dùng thành công
+  destroy_fail: Không xóa được
+  will_paginate:
+    previous_label: Trang trước
+    next_label: Trang sau
