@@ -115,6 +115,8 @@ vi:
       newuser: Chưa có tài khoản?
       invalid: Email hoặc mật khẩu không đúng
       remember_me: Nhớ tài khoản?
+      forgot: Quên mật khẩu?
+      signup: Tạo tài khoản mới
     create:
       acc_active: Tài khoản chưa đưọc kích hoạt.Xem email để nhận link kích hoạt.
   account_activations:
@@ -128,6 +130,31 @@ vi:
       link: Kích hoạt
       subject: Kích hoạt tài khoản
       title: Ưng dụng mẫu
+    password_reset:
+      subject: Làm mới mật khẩu
+      h1: Làm mới mật khẩu
+      p1: Để làm mới mật khẩu bấm vào link bên dưói
+      link: Làm mới mật khẩu
+      p2: Link này chỉ tồn tại trong 2 giờ
+      p3: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua mail này,
+            mật khẩu của bạn sẽ không bị thay đổi
+  password_resets:
+    new:
+      submit: Xác nhận
+      forgot: Quên mật khẩu
+    edit:
+      title: Làm mới mật khẩu
+      submit: Cập nhật mật khẩu
+      expried: Hết hạn làm mới mật khẩu
+      find_fail: Không tìm thấy ngưòi dùng
+    create:
+      send_email: Đã gửi Email lấy lai mật khẩu
+      not_email: Không tìm thấy địa chỉ Email
+    update:
+      not_empty: Không đưọc để trống
+      update_success: Thay đỏi mật khẩu thành công.Nhập mật khẩu mới để đăng nhập
+    send_email: Email đặt lại mật khẩu
+    not_email: Không tìm thấy địa chỉ Email
   destroy_success: Xóa ngưòi dùng thành công
   destroy_fail: Không xóa được
   will_paginate:
