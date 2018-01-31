@@ -1,0 +1,8 @@
+<h1><%= t ".title" %></h1>
+<p><%= t ".p1", displayname: @user.displayname %></p>
+<p>
+<%= t ".p2" %>
+</p>
+<%= link_to t(".link"),
+  edit_account_activation_url(@user.activation_token,
+  email: @user.email, locale: @locale) %>
