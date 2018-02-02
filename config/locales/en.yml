@@ -12,6 +12,7 @@ en:
       p3: sample application.
       link: Ruby on Rails Books
       signup: Sign up now!
+      h3: Micropost Feed
     about:
       title: About
       p1: The 
@@ -58,6 +59,8 @@ en:
     user:
       confirm: Are you sure?
       delete: Delete
+    show:
+      h3: Microposts
   layouts:
     header:
       menubar:
@@ -152,3 +155,20 @@ en:
   will_paginate:
     previous_label: Previous Label
     next_label: Next Label
+  shared:
+    user_info:
+      micropost: microposts
+      profile: Profile
+    micropost_form:
+      place_holder: Compose new micropost...
+      submit: Post
+  microposts:
+    micropost:
+      delete: Delete
+      post: Post
+      ago: Ago
+      confirm: Are you sure?
+    create:
+      micro_created: Micropost created!
+    destroy:
+      micro_delete: Micropost delete!
