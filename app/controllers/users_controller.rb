@@ -46,6 +46,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url && return unless user.activated?
+    @microposts = user.feed params[:page]
   end
 
   private
@@ -57,13 +58,6 @@ class UsersController < ApplicationController
       :age, :gender,
       :displayname, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".require_login"
-    redirect_to login_path
   end
 
   def correct_user
