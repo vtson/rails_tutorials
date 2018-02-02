@@ -3,11 +3,13 @@ class UserMailer < ApplicationMailer
     @user = user
     @locale = I18n.locale
     mail to: user.email,
-      subject: t("user_mailer.account_activation.subject")
+      subject: t(".subject")
   end
 
-  def password_reset
-    @greeting = "Hi"
-    mail to: "to@example.org"
+  def password_reset user
+    @user = user
+    @locale = I18n.locale
+    mail to: user.email,
+      subject: t(".subject")
   end
 end
