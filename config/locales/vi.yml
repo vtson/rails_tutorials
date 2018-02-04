@@ -176,6 +176,7 @@ vi:
       post: Đăng
       ago: Trưóc
       confirm: Bạn có chắc muốn xóa?
+      limit_size: File không vượt quá 5mb. Vui lòng chọn file có dung lượng nhỏ hơn
     create:
       micro_created: Đăng bài thành công
     destroy:

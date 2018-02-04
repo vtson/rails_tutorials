@@ -168,6 +168,7 @@ en:
       post: Post
       ago: Ago
       confirm: Are you sure?
+      limit_size: Maximum file size is 5MB. Please choose a smaller file.
     create:
       micro_created: Micropost created!
     destroy:
