@@ -2,12 +2,14 @@ class Micropost < ApplicationRecord
   belongs_to :user
   mount_uploader :picture, PictureUploader
 
-  validates :user_id, presence: true
+  validates :user, presence: true
   validates :content, presence: true,
     length: {maximum: Settings.microposts.max_content}
-  validate  :picture_size
+  validate :picture_size
 
-  scope :newest, ->{order created_at: :desc}
+  scope :following_feed, (lambda do |user_id, following_ids|
+    where(user_id: [user_id, *following_ids])
+  end)
 
   private
 

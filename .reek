@@ -11,3 +11,6 @@ UtilityFunction:
 FeatureEnvy:
   exclude:
     - "UsersHelper#gravatar_for"
+
+TooManyMethods:
+  max_methods: 17

@@ -5,7 +5,7 @@
   },
   "globals": {
     "window": true,
-    "I18n": true,
+    "I18n": true
   },
 
   "extends": "eslint:recommended",
