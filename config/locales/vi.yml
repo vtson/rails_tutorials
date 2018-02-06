@@ -61,6 +61,10 @@ vi:
       delete: Xóa
     show:
       h3: Bài viết
+    unfollow:
+      unfollow: Bỏ theo dõi
+    follow:
+      follow: Theo dõi
   layouts:
     header:
       menubar:

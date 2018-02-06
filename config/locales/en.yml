@@ -61,6 +61,10 @@ en:
       delete: Delete
     show:
       h3: Microposts
+    unfollow: 
+      unfollow: Unfollow
+    follow:
+      follow: Follow
   layouts:
     header:
       menubar:
