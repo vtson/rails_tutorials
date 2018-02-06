@@ -1,4 +1,3 @@
-
 Rails.application.routes.draw do
 
   get "sessions/new"
@@ -24,7 +23,13 @@ Rails.application.routes.draw do
 
     delete "/logout", to: "sessions#destroy"
 
-    resources :users
+    resources :relationships, only: %i(create destroy)
+
+    resources :users do
+      member do
+        resources :followings, :followers, only: :index
+      end
+    end
 
     resources :account_activations, only: [:edit]
 

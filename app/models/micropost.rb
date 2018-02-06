@@ -7,7 +7,7 @@ class Micropost < ApplicationRecord
     length: {maximum: Settings.microposts.max_content}
   validate :picture_size
 
-  scope :newest, ->{order created_at: :desc}
+  scope :post_followings, ->(following){where user_id: following}
 
   private
 
