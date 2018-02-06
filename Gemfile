@@ -21,6 +21,9 @@ gem "jquery-rails"
 gem "jquery-ui-rails"
 gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+gem "i18n-js"
 
 group :development, :test do
 
@@ -60,6 +63,7 @@ group :development do
   gem "simplecov-rcov", require: false
   gem "simplecov-json"
   gem "shoulda-matchers"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

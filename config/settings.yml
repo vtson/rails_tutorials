@@ -17,3 +17,7 @@ page_limit:
 
 email_expried:
   reset_password: 2
+
+microposts:
+  pic_size: 5
+  max_content: 140

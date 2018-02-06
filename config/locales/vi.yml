@@ -12,6 +12,7 @@ vi:
       p3: ứng dụng mẫu.
       link: Sách về Ruby on Rails
       signup: Đăng kí ngay!
+      h3: Các bài đăng
     about:
       title: Thông tin
       p1: Đây 
@@ -58,6 +59,8 @@ vi:
     user:
       confirm: Bạn có chắc chắn muốn xóa tài khoản này?
       delete: Xóa
+    show:
+      h3: Bài viết
   layouts:
     header:
       menubar:
@@ -160,3 +163,21 @@ vi:
   will_paginate:
     previous_label: Trang trước
     next_label: Trang sau
+  shared:
+    user_info:
+      micropost: Bài viết
+      profile: Hồ sơ
+    micropost_form:
+      place_holder: Bài viết mới...
+      submit: Gửi bài
+  microposts:
+    micropost:
+      delete: Xóa
+      post: Đăng
+      ago: Trưóc
+      confirm: Bạn có chắc muốn xóa?
+      limit_size: File không vượt quá 5mb. Vui lòng chọn file có dung lượng nhỏ hơn
+    create:
+      micro_created: Đăng bài thành công
+    destroy:
+      micro_delete: Đã xóa bài đăng

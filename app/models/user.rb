@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_reader :remember_token, :activation_token, :reset_token
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -82,6 +83,11 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.email_expried.reset_password.hours.ago
+  end
+
+  def feed page
+    microposts.newest.paginate page: page,
+      per_page: Settings.page_limit.number
   end
 
   private
