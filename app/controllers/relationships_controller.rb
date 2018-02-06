@@ -6,12 +6,15 @@ class RelationshipsController < ApplicationController
   def create
     @user = User.find_by id: params[:followed_id]
     current_user.follow user
+    @relation_do =
+      current_user.active_relationships.find_by followed_id: user.id
     do_respond
   end
 
   def destroy
-    @user = Relationship.find_by id: params[:id].followed
+    @user = Relationship.find_by(id: params[:id]).followed
     current_user.unfollow user
+    @relation_do = current_user.active_relationships.build
     do_respond
   end
 

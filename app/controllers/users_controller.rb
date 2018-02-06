@@ -46,6 +46,13 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url && return unless user.activated?
+    user_relationsip = current_user.active_relationships
+    @relation_do =
+      if current_user.following? user
+        user_relationsip.find_by followed_id: user.id
+      else
+        user_relationsip.build
+      end
     @microposts = user.feed params[:page]
   end
 
