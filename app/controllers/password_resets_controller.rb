@@ -53,7 +53,7 @@ class PasswordResetsController < ApplicationController
 
   def send_email user
     user.create_reset_digest
-    user.send_password_reset_email
+    UserMailer.send_password_reset_email user
     flash[:info] = t ".send_email"
     redirect_to root_path
   end

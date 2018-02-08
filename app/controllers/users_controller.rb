@@ -45,8 +45,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to root_url && return unless user.activated?
+    redirect_to root_path && return unless user.activated?
     @microposts = user.feed params[:page]
+    users_relations
   end
 
   private
@@ -78,9 +79,24 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def send_activation_email user
+    UserMailer.account_activation(user).deliver_now
+  end
+
   def create_success
-    user.send_activation_email
+    send_activation_email user
     flash[:info] = t ".check_email"
     redirect_to root_path
+  end
+
+  def users_relations
+    user_relationsip = current_user.active_relationships
+    relation_do =
+      if current_user.following? user
+        user_relationsip.find_by followed_id: user.id
+      else
+        user_relationsip.build
+      end
+    render locals: {relation_do: relation_do}
   end
 end
